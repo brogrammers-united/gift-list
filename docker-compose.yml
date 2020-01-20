@@ -1,10 +1,16 @@
 version: '3'
 
 services:
-  gift-list-service:
-    build: ./gift-list-service/
+  gift-list-frontend:
+    container_name: gift-list-frontend
+    build:
+      context: ./gift-list-frontend
+      dockerfile: Dockerfile
+    volumes:
+      - './gift-list-frontend:/app'
+      - '/app/node_modules'
     ports:
-      - "4000:4000"
+      - '4201:4200'
   gift-list-postgres:
     ports:
       - "5432:5432"
