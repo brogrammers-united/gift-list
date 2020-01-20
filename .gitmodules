@@ -1,0 +1,6 @@
+[submodule "gift-list-service"]
+	path = gift-list-service
+	url = https://github.com/brogrammers-united/gift-list-service.git
+[submodule "gift-list-frontend"]
+	path = gift-list-frontend
+	url = https://github.com/brogrammers-united/gift-list-frontend.git
